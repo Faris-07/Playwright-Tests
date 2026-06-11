@@ -1,5 +1,6 @@
 using Microsoft.Playwright;
 using FluentAssertions;
+using System.Threading.Tasks;
 
 namespace PlaywrightSpecFlowPOM.Pages
 {
@@ -13,7 +14,7 @@ namespace PlaywrightSpecFlowPOM.Pages
         }
 
         // Playwright Locators
-        private ILocator SearchInput => _user.GetByPlaceholder("Search without being tracked");
+        private ILocator SearchInput => _user.GetByPlaceholder("Search privately");
         private ILocator SearchButton => _user.Locator("button[type='submit']");
 
         public async Task NavigateAsync()

@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "xl9p13O+OHF7dT+3JlDMasV+8bSOsymZ4Dqg2V17QsI3ddryAO+qpnGEw/MBzEnqkTXdMR6xZnP83R4RET3ctA==",
-  "success": false,
+  "dgSpecHash": "GuEcJkvFDPbJn2PAG12TBHuoR730BJoO0iX5MLBYeAjPcGR0fAXcKZc5zdFtJwGVnnTeAduoQ3UcSq4hyBQ6Rg==",
+  "success": true,
   "projectFilePath": "C:\\Users\\Faris Uddin\\Playwright-Tests\\PlaywrightSpecFlowPOM\\PlaywrightSpecFlowPOM.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Faris Uddin\\.nuget\\packages\\bodi\\1.5.0\\bodi.1.5.0.nupkg.sha512",
@@ -24,7 +24,7 @@
     "C:\\Users\\Faris Uddin\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
     "C:\\Users\\Faris Uddin\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
     "C:\\Users\\Faris Uddin\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
-    "C:\\Users\\Faris Uddin\\.nuget\\packages\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",
+    "C:\\Users\\Faris Uddin\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
     "C:\\Users\\Faris Uddin\\.nuget\\packages\\nunit3testadapter\\3.16.1\\nunit3testadapter.3.16.1.nupkg.sha512",
     "C:\\Users\\Faris Uddin\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\Faris Uddin\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
@@ -117,15 +117,5 @@
     "C:\\Users\\Faris Uddin\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
     "C:\\Users\\Faris Uddin\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.3.0\\system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: NUnit from 3.13.1 to 3.12.0. Reference the package directly from the project to select a different version. \r\n PlaywrightSpecFlowPOM -> SpecFlow.NUnit 3.9.74 -> NUnit (>= 3.13.1) \r\n PlaywrightSpecFlowPOM -> NUnit (>= 3.12.0)",
-      "libraryId": "NUnit",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  "logs": []
 }

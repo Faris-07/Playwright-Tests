@@ -1,5 +1,6 @@
 using Microsoft.Playwright;
 using FluentAssertions;
+using System.Threading.Tasks;
 
 namespace PlaywrightSpecFlowPOM.Pages
 {

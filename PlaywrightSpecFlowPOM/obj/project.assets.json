@@ -517,7 +517,7 @@
           "lib/netstandard2.0/NuGet.Frameworks.dll": {}
         }
       },
-      "NUnit/3.12.0": {
+      "NUnit/3.13.3": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "2.0.0"
@@ -2887,10 +2887,10 @@
         "nuget.frameworks.nuspec"
       ]
     },
-    "NUnit/3.12.0": {
-      "sha512": "3oJTrcUcT9wmweBUwgUf0f1XIYy6RZq2ziV+RM95HMKAJGsHPN2i3MKK1dAPvDPMRLz799Llj4eyu/STB9Q7OA==",
+    "NUnit/3.13.3": {
+      "sha512": "KNPDpls6EfHwC3+nnA67fh5wpxeLb3VLFAfLxrug6JMYDLHH6InaQIWR7Sc3y75d/9IKzMksH/gi08W7XWbmnQ==",
       "type": "package",
-      "path": "nunit/3.12.0",
+      "path": "nunit/3.13.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2898,22 +2898,16 @@
         "LICENSE.txt",
         "NOTICES.txt",
         "build/NUnit.props",
+        "icon.png",
         "lib/net35/nunit.framework.dll",
-        "lib/net35/nunit.framework.pdb",
         "lib/net35/nunit.framework.xml",
         "lib/net40/nunit.framework.dll",
-        "lib/net40/nunit.framework.pdb",
         "lib/net40/nunit.framework.xml",
         "lib/net45/nunit.framework.dll",
-        "lib/net45/nunit.framework.pdb",
         "lib/net45/nunit.framework.xml",
-        "lib/netstandard1.4/nunit.framework.dll",
-        "lib/netstandard1.4/nunit.framework.pdb",
-        "lib/netstandard1.4/nunit.framework.xml",
         "lib/netstandard2.0/nunit.framework.dll",
-        "lib/netstandard2.0/nunit.framework.pdb",
         "lib/netstandard2.0/nunit.framework.xml",
-        "nunit.3.12.0.nupkg.sha512",
+        "nunit.3.13.3.nupkg.sha512",
         "nunit.nuspec"
       ]
     },
@@ -7194,7 +7188,7 @@
       "FluentAssertions >= 8.10.0",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
       "Microsoft.Playwright >= 1.60.0",
-      "NUnit >= 3.12.0",
+      "NUnit >= 3.13.3",
       "NUnit3TestAdapter >= 3.16.1",
       "SpecFlow.NUnit >= 3.9.74"
     ]
@@ -7257,7 +7251,7 @@
           },
           "NUnit": {
             "target": "Package",
-            "version": "[3.12.0, )"
+            "version": "[3.13.3, )"
           },
           "NUnit3TestAdapter": {
             "target": "Package",
@@ -7286,16 +7280,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: NUnit from 3.13.1 to 3.12.0. Reference the package directly from the project to select a different version. \r\n PlaywrightSpecFlowPOM -> SpecFlow.NUnit 3.9.74 -> NUnit (>= 3.13.1) \r\n PlaywrightSpecFlowPOM -> NUnit (>= 3.12.0)",
-      "libraryId": "NUnit",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  }
 }

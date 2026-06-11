@@ -1,5 +1,6 @@
 using Microsoft.Playwright;
 using TechTalk.SpecFlow;
+using System.Threading.Tasks;
 
 namespace PlaywrightSpecFlowPOM.Hooks
 {
