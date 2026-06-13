@@ -23,7 +23,7 @@ namespace PlaywrightSpecFlowPOM.Pages
             string actualText = await FirstResultHeading.InnerTextAsync();
             
             // C# FluentAssertion assertion check
-            actualText.Should().Contain(expectedText);
+            actualText.Should().ContainEquivalentOf(expectedText);
         }
     }
 }

@@ -15,7 +15,7 @@ namespace PlaywrightSpecFlowPOM.Pages
 
         // Playwright Locators
         private ILocator SearchInput => _user.GetByPlaceholder("Search privately");
-        private ILocator SearchButton => _user.Locator("button[type='submit']");
+        private ILocator SearchButton => _user.Locator("button[type='submit'][class*='searchButton']");
 
         public async Task NavigateAsync()
         {
