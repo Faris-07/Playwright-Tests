@@ -10,6 +10,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: PlaywrightSpecFlowPOM
+
     steps:
     # 1. Checkout code from GitHub
     - name: Checkout Code
