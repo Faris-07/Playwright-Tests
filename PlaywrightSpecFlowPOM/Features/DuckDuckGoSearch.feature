@@ -14,4 +14,4 @@ Scenario Outline: Search for multiple tech terms on DuckDuckGo
 	| SearchTerm | ExpectedResult |
 	| SpecFlow   | SpecFlow       |
 	| Selenium   | Selenium       |
-	| C# .NET    | C#             |
+	| C# .NET    | C#iuhg         |

@@ -107,7 +107,7 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.DescriptionAttribute("Search for multiple tech terms on DuckDuckGo")]
         [NUnit.Framework.TestCaseAttribute("SpecFlow", "SpecFlow", null)]
         [NUnit.Framework.TestCaseAttribute("Selenium", "Selenium", null)]
-        [NUnit.Framework.TestCaseAttribute("C# .NET", "C#", null)]
+        [NUnit.Framework.TestCaseAttribute("C# .NET", "C#iuhg", null)]
         public void SearchForMultipleTechTermsOnDuckDuckGo(string searchTerm, string expectedResult, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
