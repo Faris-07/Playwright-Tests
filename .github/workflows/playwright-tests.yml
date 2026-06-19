@@ -1,0 +1,49 @@
+name: Playwright SpecFlow Regression Tests
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Checkout code from GitHub
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    # 2. Setup the .NET Environment (Matching net5.0 / runtime framework)
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '5.0.x'
+
+    # 3. Install Dependencies
+    - name: Restore Dependencies
+      run: dotnet restore
+
+    # 4. Build the project to generate binaries and Playwright internals
+    - name: Build Project
+      run: dotnet build --configuration Release --no-restore
+
+    # 5. Install Playwright Browsers inside the GitHub VM
+    - name: Install Playwright Browsers
+      run: |
+        dotnet tool install --global Microsoft.Playwright.CLI || true
+        playwright install --with-deps
+
+    # 6. Execute the SpecFlow Test Suite (Forcing Headless mode in CI)
+    - name: Run Automated Tests
+      run: dotnet test --configuration Release --no-build
+
+    # 7. Upload Failure Screenshots if any test fails
+    - name: Upload Failure Screenshots
+      if: failure()
+      uses: actions/upload-artifact@v4
+      with:
+        name: playwright-failure-screenshots
+        path: PlaywrightSpecFlowPOM/TestingScreenshots/
+        if-no-files-found: warn
